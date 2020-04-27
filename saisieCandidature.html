@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Formulaire</legend>
+
+            <form action="recapitulation.php" method="GET" name="authentification" >
+
+                <label>Champs à renseigner :</label>
+                <br/>
+                <br/>
+					<input type="text" name="Nom"
+						placeholder="Saisir votre nom :" required/>
+                <br/>
+                <br/>
+					<input type="text" name="Prénom"
+						placeholder="Saisir votre prénom :" required/>
+                <br/>
+                <br/>
+					<input type="text" name="Civilité"
+						placeholder="Saisir votre civilité :" />
+                <br/>
+                <br/>
+					<input type="Date" name="DateNaissance"
+						placeholder="Saisir votre Date Naissance :" required/>
+                <br/>
+                <br/>
+					<input type="tel" name="NumTel"
+						placeholder="Numéro de téléphone :" required/>
+                <br/>
+                <br/>
+					<input type="email" name="Email"
+						placeholder="Saisir votre adresse mail :" required/>
+                <br/>
+                <br/>
+					<fieldset>
+					<label>Niveau PHP</label>
+				<br/>
+				<br/>	
+							<input type="radio" name="Niveau" id="débutant" value="débutant"/>
+							<label for="débutant">débutant</label>
+				<br/>			
+							<input type="radio" name="Niveau" id="moyen" value="moyen"/>
+							<label for="moyen">moyen</label>
+				<br/>			
+							<input type="radio" name="Niveau" id="bon" value="bon"/>
+							<label for="bon">bon</label>
+                 <br/>
+                 </fieldset>
+                 <br/>
+                 <fieldset>
+					<label>Framework(s) pratiqué(s)</label>
+				<br/>
+				<br/>	
+							<input type="checkbox" name="n1" id="Symfony" value="Symfony"/>
+							<label for="Symfony">Symfony</label>
+							
+							<input type="checkbox" name="n2" id="CodeIgniter" value="CodeIgniter"/>
+							<label for="CodeIgniter">CodeIgniter</label>
+							
+							<input type="checkbox" name="n3" id="FuelPHP" value="FuelPHP"/>
+							<label for="FuelPHP">FuelPHP</label>
+                 
+							<input type="checkbox" name="n4" id="CakePHP" value="CakePHP"/>
+							<label for="CakePHP">CakePHP</label>
+                
+							<input type="checkbox" name="n5" id="Laravel" value="Laravel"/>
+							<label for="Laravel">Laravel</label>
+                 <br/>
+                 </fieldset>
+                 </br>
+                 Moi :
+                 <br/>
+					<textarea name="Message" rows="6" cols="50"></textarea>
+                </br>
+                </br>
+					<input type="submit" value="Valider" />
+					<input type="reset" value="Réinitialiser" />
+            </form>
+        </fieldset>
+    </body>
+</html>
